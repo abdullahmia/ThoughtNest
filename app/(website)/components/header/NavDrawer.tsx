@@ -1,4 +1,4 @@
-import Button from '@/app/components/ui/Button'
+import Button from '@/app/components/ui/Button/index'
 import Link from 'next/link'
 import { BiX } from 'react-icons/bi'
 
