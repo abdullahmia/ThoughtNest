@@ -1,7 +1,12 @@
 import Button from '@/app/components/ui/button'
 import Link from 'next/link'
+import { BiMenu } from 'react-icons/bi'
 
-export default function Header() {
+interface NavigationProps {
+  toggleDrawer: () => void
+}
+
+export default function Navigation({ toggleDrawer }: NavigationProps) {
   return (
     <header className="bg-fill-secondary px-4 py-4 lg:px-0">
       <div className="container flex items-center justify-between">
@@ -38,13 +43,19 @@ export default function Header() {
           </h2>
         </div>
 
-        <div className="flex items-center gap-3">
-          <Button variant="outline" size="md">
-            Login
-          </Button>
-          <Button variant="primary" size="md">
-            Signup
-          </Button>
+        <button onClick={toggleDrawer} className="block lg:hidden">
+          <BiMenu size={20} />
+        </button>
+
+        <div className="hidden lg:block">
+          <div className="flex items-center gap-3">
+            <Button variant="text" size="md">
+              Login
+            </Button>
+            <Button variant="primary" size="md">
+              Signup
+            </Button>
+          </div>
         </div>
       </div>
     </header>
