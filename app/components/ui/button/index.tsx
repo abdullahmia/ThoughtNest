@@ -39,7 +39,7 @@ export default function Button(props: ButtonProps) {
       props.variant === 'secondary'
         ? 'shadow bg-white'
         : props.variant === 'primary'
-          ? 'bg-fill-primary text-white'
+          ? 'bg-fill-primary border border-fill-primary text-white'
           : props.variant === 'outline'
             ? 'border border-primary hover:bg-primary hover:text-white'
             : props.variant === 'danger'

@@ -1,11 +1,5 @@
-export default function Page() {
-  return (
-    <div className="container">
-      <h1>Page</h1>
+import { redirect } from 'next/navigation'
 
-      <p>
-        This page is rendered using <code>app/page.tsx</code>.
-      </p>
-    </div>
-  )
+export default function Page() {
+  return redirect('/home')
 }
