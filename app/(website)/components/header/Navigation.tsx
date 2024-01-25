@@ -1,4 +1,5 @@
-import Button from '@/app/components/ui/button'
+import Button from '@/app/components/ui/Button'
+import Logo from '@/app/components/ui/Logo'
 import Link from 'next/link'
 import { BiMenu } from 'react-icons/bi'
 
@@ -34,14 +35,7 @@ export default function Navigation({ toggleDrawer }: NavigationProps) {
           </Link>
         </div>
 
-        <div>
-          <h2 className="text-md">
-            <span className="bg-fill-primary px-1 text-2xl text-white">
-              THOUGHT
-            </span>
-            NEST
-          </h2>
-        </div>
+        <Logo />
 
         <button onClick={toggleDrawer} className="block lg:hidden">
           <BiMenu size={20} />
