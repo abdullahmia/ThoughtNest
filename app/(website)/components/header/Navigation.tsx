@@ -1,4 +1,4 @@
-import Button from '@/app/components/ui/Button'
+import Button from '@/app/components/ui/Button/index'
 import Logo from '@/app/components/ui/Logo'
 import Link from 'next/link'
 import { BiMenu } from 'react-icons/bi'
