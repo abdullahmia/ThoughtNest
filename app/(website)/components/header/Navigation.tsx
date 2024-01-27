@@ -1,4 +1,4 @@
-import Button from '@/app/components/ui/Button/index'
+import Button from '@/app/components/ui/button'
 import Logo from '@/app/components/ui/Logo'
 import Link from 'next/link'
 import { BiMenu } from 'react-icons/bi'
@@ -43,11 +43,8 @@ export default function Navigation({ toggleDrawer }: NavigationProps) {
 
         <div className="hidden lg:block">
           <div className="flex items-center gap-3">
-            <Button variant="text" size="md">
-              Login
-            </Button>
             <Button variant="primary" size="md">
-              Signup
+              Login
             </Button>
           </div>
         </div>

@@ -1,6 +1,6 @@
 interface HeadingProps {
   hightlightedText?: string
-  text: string
+  text?: string
 }
 
 export default function Heading({ hightlightedText, text }: HeadingProps) {
@@ -10,7 +10,9 @@ export default function Heading({ hightlightedText, text }: HeadingProps) {
         <span className="bg-fill-primary px-1 text-2xl text-white">
           {hightlightedText}
         </span>
-        <span className="ms-1 font-semibold text-secondary">{text}</span>
+        {text && (
+          <span className="ms-1 font-semibold text-secondary">{text}</span>
+        )}
       </h2>
     </div>
   )

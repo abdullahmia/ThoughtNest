@@ -1,4 +1,4 @@
-import Button from '@/app/components/ui/Button/index'
+import Button from '@/app/components/ui/button'
 import FormElements from '@/app/components/ui/FormElement'
 
 export default function Subsribe() {
