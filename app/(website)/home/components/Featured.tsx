@@ -9,7 +9,7 @@ export default function Featured() {
       <Heading hightlightedText="Featured" text="This Month" />
       <div className="mt-8 space-y-4">
         {/* Single Posts */}
-        <div className="flex gap-8 rounded-md bg-white p-5">
+        <div className="flex flex-col gap-8 rounded-md bg-white  p-5 lg:flex-row">
           <div>
             <Image
               src={
@@ -47,7 +47,7 @@ export default function Featured() {
           </div>
         </div>
 
-        <div className="flex gap-8 rounded-md bg-white p-5">
+        <div className="flex flex-col gap-8 rounded-md bg-white p-5 lg:flex-row">
           <div>
             <Image
               src={
