@@ -5,9 +5,7 @@ export interface LabelProps {
 
 export const Label = (props: LabelProps) => {
   return (
-    <label
-      className={`mb-1 block text-[14px] font-medium text-gray-700 dark:text-[#D4D4D4]`}
-    >
+    <label className={`mb-1 block text-[14px] font-medium text-gray-700`}>
       {props.children}
       {props.withAsterisk && (
         <span className="text-gray-800" title="Required">
