@@ -7,6 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "db:migrate": "prisma migrate dev",
+    "format": "prisma format",
+    "generate": "prisma generate",
     "postinstall": "prisma generate",
     "pre-commit": "lint-staged",
     "docker:start": "docker-compose up -d",
@@ -40,6 +43,7 @@
     "prettier-plugin-tailwindcss": "^0.5.11",
     "prisma": "^5.8.1",
     "tailwindcss": "^3.3.0",
-    "typescript": "^5"
+    "typescript": "^5",
+    "server-only": "^0.0.1"
   }
 }
