@@ -1,14 +1,3 @@
-// interface ButtonProps {
-//   children: React.ReactNode
-//   varriant?: 'primary' | 'secondary' | 'outline' | 'danger' | 'text'
-//   size?: 'sm' | 'md' | 'lg'
-//   onClick?: () => void
-//   disabled?: boolean
-//   type?: 'button' | 'submit' | 'reset'
-//   className?: string
-//   rounded?: 'sm' | 'md' | 'lg' | 'full'
-// }
-
 import Link from 'next/link'
 
 export interface ButtonProps {
@@ -25,6 +14,7 @@ export interface ButtonProps {
   weight?: 'normal' | 'bold' | 'light'
   customClass?: string
   flex?: boolean
+  ref?: any
 }
 
 export default function Button(props: ButtonProps) {
@@ -79,9 +69,14 @@ export default function Button(props: ButtonProps) {
     >
       {props.loading && <>Loading</>}
       {props.children}
+      ref={props.ref}
     </button>
   ) : (
-    <Link href={props.to ? (props.to as string) : '/'} className={classess}>
+    <Link
+      ref={props.ref}
+      href={props.to ? (props.to as string) : '/'}
+      className={classess}
+    >
       {props.children}
     </Link>
   )
