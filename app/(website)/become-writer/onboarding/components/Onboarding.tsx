@@ -44,7 +44,7 @@ export default function Onboarding() {
           {currentStep < 5 ? (
             <>{Math.floor(percent * 100)}% complete</>
           ) : (
-            <>Almost there!</>
+            <>Almost there!!</>
           )}
         </div>
       </div>
