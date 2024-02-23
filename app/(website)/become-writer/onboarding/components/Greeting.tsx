@@ -55,7 +55,7 @@ export default function Greeting({ next, skip, name, session }: Greeting) {
             ref={buttonRef}
             // tabIndex={0}
           >
-            Begin (1 min)
+            Begin (1 min).
           </Button>
         </div>
       </div>
